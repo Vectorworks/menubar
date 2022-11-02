@@ -21,6 +21,7 @@ export class Menubar extends EventEmitter {
   private _cachedBounds?: Electron.Rectangle; // _cachedBounds are needed for double-clicked event
   private _options: Options;
   private _positioner: Positioner | undefined;
+  private positionerClass: any;
   private _tray?: Tray;
 
   constructor(app: Electron.App, options?: Partial<Options>) {
@@ -282,7 +283,7 @@ export class Menubar extends EventEmitter {
       ...this._options.browserWindow,
     });
 
-    this._positioner = new Positioner(this._browserWindow);
+    this._positioner = new this.positionerClass(this._browserWindow);
 
     this._browserWindow.on('blur', () => {
       if (!this._browserWindow) {
