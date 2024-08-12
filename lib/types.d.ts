@@ -1,4 +1,4 @@
-import { BrowserWindowConstructorOptions, LoadURLOptions, Tray } from 'electron';
+import type { BrowserWindowConstructorOptions, LoadURLOptions, Tray } from 'electron';
 /**
  * Options for creating a menubar application
  */

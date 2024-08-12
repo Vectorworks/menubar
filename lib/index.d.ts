@@ -6,7 +6,7 @@
  * ```
  */
 import { Menubar } from './Menubar';
-import { Options } from './types';
+import type { Options } from './types';
 export * from './util/getWindowPosition';
 export { Menubar };
 /**

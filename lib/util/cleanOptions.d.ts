@@ -1,7 +1,7 @@
 /**
  * @ignore
  */
-import { Options } from '../types';
+import type { Options } from '../types';
 /**
  * Take as input some options, and return a sanitized version of it.
  *

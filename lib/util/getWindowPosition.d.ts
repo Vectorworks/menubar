@@ -2,8 +2,8 @@
  * Utilities to get taskbar position and consequently menubar's position
  */
 /** */
-import { Tray } from 'electron';
-declare type TaskbarLocation = 'top' | 'bottom' | 'left' | 'right';
+import { type Tray } from 'electron';
+type TaskbarLocation = 'top' | 'bottom' | 'left' | 'right';
 /**
  * Determine taskbard location: "top", "bottom", "left" or "right".
  *
@@ -12,7 +12,7 @@ declare type TaskbarLocation = 'top' | 'bottom' | 'left' | 'right';
  * @param tray - The Electron Tray instance.
  */
 export declare function taskbarLocation(tray: Tray): TaskbarLocation;
-declare type WindowPosition = 'trayCenter' | 'topRight' | 'trayBottomCenter' | 'bottomLeft' | 'bottomRight';
+type WindowPosition = 'trayCenter' | 'topRight' | 'trayBottomCenter' | 'bottomLeft' | 'bottomRight';
 /**
  * Depending on where the taskbar is, determine where the window should be
  * positioned.
